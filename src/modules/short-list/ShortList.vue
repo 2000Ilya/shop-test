@@ -14,7 +14,7 @@ const props = defineProps<TShortListProps>()
         </Text>
         <div class="flex flex-row justify-between">
             <Text :tag="ETextTag.span" :weight="ETextWeight.normal" :color="ETextColor.secondary">
-                {{ item.quantity }}
+                {{ item.quantity }} шт.
             </Text>
             <Text :tag="ETextTag.span" :weight="ETextWeight.normal" :color="ETextColor.secondary">
                 {{ item.price.toFixed(2) }}
