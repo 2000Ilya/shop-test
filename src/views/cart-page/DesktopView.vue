@@ -29,9 +29,9 @@ function handleSaveProducts() {
     <div class="w-full h-full flex flex-col items-center gap-y-10 col-span-2">
         <div v-if="props.cartList.length > 0" class="w-full h-full flex flex-col gap-4 items-center justify-between">
             <TableList :items="props.cartList" class="w-full" />
-            <div class="w-full flex flex-col gap-4">
-                <div class="w-full flex flex-col justify-end">
-                    <hr class="border-b border-[#0170AE]" />
+            <div class="w-full flex flex-col gap-4 items-center">
+                <div class="w-full flex flex-col items-end">
+                    <hr class="w-full border-b border-[#0170AE]" />
                     <Text :tag="ETextTag.span" :weight="ETextWeight.normal" :color="ETextColor.secondary">
                         Итого: {{ props.cartPrice.toFixed(2) }}
                     </Text>
